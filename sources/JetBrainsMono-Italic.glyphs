@@ -167,70 +167,6 @@ lookup uppercaseSharpS {
     sub germandbls' @Uppercase by germandbls.calt;
 } uppercaseSharpS;
 
-#{{
-lookup braceleft_braceleft.liga {
-ignore sub braceleft braceleft' braceleft;
-ignore sub braceleft' braceleft hyphen;
-sub SPC braceleft' by braceleft_braceleft.liga;
-sub braceleft' braceleft by SPC;
-} braceleft_braceleft.liga;
-
-#}}
-lookup braceright_braceright.liga {
-ignore sub braceright braceright' braceright;
-ignore sub hyphen braceright' braceright;
-sub SPC braceright' by braceright_braceright.liga;
-sub braceright' braceright by SPC;
-} braceright_braceright.liga;
-
-#{{--
-lookup braceleft_braceleft_hyphen_hyphen.liga {
-ignore sub braceleft braceleft hyphen hyphen' hyphen;
-ignore sub braceleft braceleft' braceleft hyphen hyphen;
-sub SPC SPC SPC hyphen' by braceleft_braceleft_hyphen_hyphen.liga;
-sub SPC SPC hyphen' hyphen by SPC;
-sub SPC braceleft' hyphen hyphen by SPC;
-sub braceleft' braceleft hyphen hyphen by SPC;
-} braceleft_braceleft_hyphen_hyphen.liga;
-
-#--}}
-lookup hyphen_hyphen_braceright_braceright.liga {
-ignore sub hyphen hyphen' hyphen braceright braceright;
-ignore sub hyphen' hyphen braceright braceright braceright;
-sub SPC SPC SPC braceright' by hyphen_hyphen_braceright_braceright.liga ;
-sub SPC SPC braceright' braceright by SPC;
-sub SPC hyphen' braceright braceright by SPC;
-sub hyphen' hyphen braceright braceright by SPC;
-} hyphen_hyphen_braceright_braceright.liga ;
-
-#{!!
-lookup braceleft_exclam_exclam.liga {
-ignore sub braceleft braceleft' exclam exclam;
-ignore sub braceleft' exclam exclam exclam;
-sub SPC SPC exclam' by braceleft_exclam_exclam.liga;
-sub SPC exclam' exclam by SPC;
-sub braceleft' exclam exclam by SPC;
-} braceleft_exclam_exclam.liga;
-
-#!!}
-lookup exclam_exclam_braceright.liga {
-ignore sub exclam exclam' braceright braceright;
-ignore sub exclam exclam' exclam braceright;
-sub SPC SPC braceright' by exclam_exclam_braceright.liga;
-sub SPC exclam' braceright by SPC;
-sub exclam' exclam braceright by SPC;
-} exclam_exclam_braceright.liga;
-
-#{!--
-lookup braceleft_exclam_hyphen_hyphen.liga {
-ignore sub braceleft braceleft' exclam hyphen hyphen;
-ignore sub braceleft' exclam hyphen hyphen hyphen;
-sub SPC SPC SPC hyphen' by braceleft_exclam_hyphen_hyphen.liga;
-sub SPC SPC hyphen' hyphen by SPC;
-sub SPC exclam' hyphen hyphen by SPC;
-sub braceleft' exclam hyphen hyphen by SPC;
-} braceleft_exclam_hyphen_hyphen.liga;
-
 lookup equal_colon.liga {
 ignore sub equal equal' colon;
 ignore sub equal' colon colon;
@@ -270,13 +206,6 @@ sub SPC numbersign' numbersign numbersign by SPC;
 sub numbersign' numbersign numbersign numbersign by SPC;
 } numbersign_numbersign_numbersign_numbersign.liga;
 
-lookup bar_braceright.liga {
-ignore sub bar bar' braceright;
-ignore sub bar' bar braceright;
-sub SPC braceright' by bar_braceright.liga;
-sub bar' braceright by SPC;
-} bar_braceright.liga;
-
 lookup bracketleft_bar.liga {
 ignore sub bracketleft bracketleft' bar;
 sub SPC bar' by bracketleft_bar.liga;
@@ -300,13 +229,6 @@ ignore sub bracketleft' less equal;
 sub SPC less' by bracketleft_less.liga;
 sub bracketleft' less by SPC;
 } bracketleft_less.liga;
-
-lookup braceleft_bar.liga {
-ignore sub braceleft braceleft' bar;
-ignore sub braceleft' bar bar;
-sub SPC bar' by braceleft_bar.liga;
-sub braceleft' bar by SPC;
-} braceleft_bar.liga;
 
 lookup backslash_slash.liga {
 sub @SpaceExlusion SPC slash' @SpaceExlusion by backslash_slash.liga;
@@ -1359,13 +1281,6 @@ ignore sub slash' greater greater;
 sub SPC greater' by slash_greater.liga;
 sub slash' greater by SPC;
 } slash_greater.liga;
-
-lookup numbersign_braceleft.liga {
-ignore sub numbersign numbersign' braceleft;
-ignore sub numbersign' braceleft braceleft;
-sub SPC braceleft' by numbersign_braceleft.liga;
-sub numbersign' braceleft by SPC;
-} numbersign_braceleft.liga;
 
 lookup numbersign_bracketleft.liga {
 ignore sub numbersign numbersign' bracketleft;
