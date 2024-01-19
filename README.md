@@ -53,7 +53,7 @@ Once JetBrains Mono is installed in your OS, you are ready to configure the edit
 ### **Visual Studio Code** 
 
 1. From the **File** menu (**Code** on Mac) go to `Preferences` → `Settings`, or use keyboard shortcut <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>Cmd</kbd>+<kbd>,</kbd> on Mac).
-2. In the **Editor: Font Family** input box type `JetBrains Mono`, replacing any content.
+2. In the **Editor: Font Family** input box type `JetBrains Mono NBL`, replacing any content.
 3. To enable ligatures, go to **Editor: Font Ligatures**, click **Edit in settings.json**, and copy this line `"editor.fontLigatures": true` into json file.
 
 ### **More ways to install**
