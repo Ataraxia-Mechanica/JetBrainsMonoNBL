@@ -1288,6 +1288,7 @@ sub SPC SPC parenleft' by numbersign_underscore_parenleft.liga;
 sub SPC underscore' parenleft by SPC;
 sub numbersign' underscore parenleft by SPC;
 } numbersign_underscore_parenleft.liga;
+";
 tag = calt;
 },
 {
