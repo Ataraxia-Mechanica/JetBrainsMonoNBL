@@ -125,7 +125,7 @@ wght = {
 }
 );
 date = "2023-02-09 14:46:58 +0000";
-familyName = "JetBrains Mono";
+familyName = "JetBrains Mono NBL";
 featurePrefixes = (
 {
 automatic = 1;
