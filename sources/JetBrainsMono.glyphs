@@ -206,30 +206,6 @@ sub SPC numbersign' numbersign numbersign by SPC;
 sub numbersign' numbersign numbersign numbersign by SPC;
 } numbersign_numbersign_numbersign_numbersign.liga;
 
-lookup bracketleft_bar.liga {
-ignore sub bracketleft bracketleft' bar;
-sub SPC bar' by bracketleft_bar.liga;
-sub bracketleft' bar by SPC;
-} bracketleft_bar.liga;
-
-lookup bar_bracketright.liga {
-ignore sub bar' bracketright bracketright;
-sub SPC bracketright' by bar_bracketright.liga;
-sub bar' bracketright by SPC;
-} bar_bracketright.liga;
-
-lookup bracketleft_less.liga {
-ignore sub bracketleft bracketleft' less;
-ignore sub bracketleft' less less;
-ignore sub bracketleft' less plus;
-ignore sub bracketleft' less asterisk;
-ignore sub bracketleft' less dollar;
-ignore sub bracketleft' less slash;
-ignore sub bracketleft' less equal;
-sub SPC less' by bracketleft_less.liga;
-sub bracketleft' less by SPC;
-} bracketleft_less.liga;
-
 lookup backslash_slash.liga {
 sub @SpaceExlusion SPC slash' @SpaceExlusion by backslash_slash.liga;
 sub @SpaceExlusion backslash' slash @SpaceExlusion by SPC;
@@ -518,7 +494,6 @@ sub hyphen' greater greater by SPC;
 } hyphen_greater_greater.liga;
 
 lookup hyphen_hyphen_greater.liga {
-ignore sub bracketleft hyphen' hyphen greater;
 ignore sub hyphen hyphen' hyphen greater;
 ignore sub hyphen' hyphen greater greater;
 sub SPC SPC greater' by hyphen_hyphen_greater.liga;
@@ -527,7 +502,6 @@ sub hyphen' hyphen greater by SPC;
 } hyphen_hyphen_greater.liga;
 
 lookup hyphen_greater.liga {
-ignore sub bracketleft hyphen' greater;
 ignore sub hyphen hyphen' greater;
 ignore sub greater hyphen' greater;
 ignore sub bar hyphen' greater;
@@ -572,18 +546,6 @@ ignore sub greater' colon colon;
 sub SPC colon' by greater_colon.liga;
 sub greater' colon by SPC;
 } greater_colon.liga;
-
-lookup greater_bracketright.liga {
-ignore sub greater greater' bracketright;
-ignore sub plus greater' bracketright;
-ignore sub asterisk greater' bracketright;
-ignore sub dollar greater' bracketright;
-ignore sub slash greater' bracketright;
-ignore sub equal greater' bracketright;
-ignore sub greater' bracketright bracketright;
-sub SPC bracketright' by greater_bracketright.liga;
-sub greater' bracketright by SPC;
-} greater_bracketright.liga;
 
 lookup less_equal.liga {
 ignore sub less' equal less;
@@ -668,7 +630,6 @@ sub equal' exclam equal by SPC;
 } equal_exclam_equal.liga;
 
 lookup equal_greater.liga {
-ignore sub bracketleft equal' greater;
 ignore sub equal equal' greater;
 ignore sub greater equal' greater;
 ignore sub bar equal' greater;
@@ -848,14 +809,11 @@ sub bar' equal by SPC;
 lookup bar_bar.liga {
 ignore sub bar bar' bar;
 ignore sub bar' bar bar;
-ignore sub bracketleft bar' bar;
-ignore sub bar' bar bracketright;
 sub SPC bar' by bar_bar.liga;
 sub bar' bar by SPC;
 } bar_bar.liga;
 
 lookup hyphen_hyphen.liga {
-ignore sub bracketleft hyphen' hyphen greater;
 ignore sub parenleft question less exclam hyphen' hyphen;
 ignore sub hyphen hyphen' hyphen;
 ignore sub less hyphen' hyphen;
@@ -873,7 +831,6 @@ sub less' hyphen hyphen by SPC;
 } less_hyphen_hyphen.liga;
 
 lookup hyphen_hyphen_hyphen.liga {
-ignore sub bracketleft hyphen' hyphen hyphen greater;
 ignore sub hyphen hyphen' hyphen hyphen;
 ignore sub hyphen' hyphen hyphen hyphen;
 sub SPC SPC hyphen' by hyphen_hyphen_hyphen.liga;
@@ -997,7 +954,6 @@ sub less' equal equal greater by SPC;
 } less_equal_equal_greater.liga;
 
 lookup equal_equal_greater.liga {
-ignore sub bracketleft equal' equal greater;
 ignore sub equal equal' equal greater;
 ignore sub parenleft question less equal' equal greater;
 ignore sub parenleft question equal' equal greater;
@@ -1282,13 +1238,6 @@ sub SPC greater' by slash_greater.liga;
 sub slash' greater by SPC;
 } slash_greater.liga;
 
-lookup numbersign_bracketleft.liga {
-ignore sub numbersign numbersign' bracketleft;
-ignore sub numbersign' bracketleft bracketleft;
-sub SPC bracketleft' by numbersign_bracketleft.liga;
-sub numbersign' bracketleft by SPC;
-} numbersign_bracketleft.liga;
-
 lookup numbersign_parenleft.liga {
 ignore sub numbersign numbersign' parenleft;
 ignore sub numbersign' parenleft parenleft;
@@ -1339,13 +1288,6 @@ sub SPC SPC parenleft' by numbersign_underscore_parenleft.liga;
 sub SPC underscore' parenleft by SPC;
 sub numbersign' underscore parenleft by SPC;
 } numbersign_underscore_parenleft.liga;
-
-lookup bracketright_numbersign.liga {
-ignore sub bracketright bracketright' numbersign;
-ignore sub bracketright' numbersign numbersign;
-sub SPC numbersign' by bracketright_numbersign.liga;
-sub bracketright' numbersign by SPC;
-} bracketright_numbersign.liga;
 ";
 tag = calt;
 },
@@ -1635,13 +1577,9 @@ sub asterisk greater by asterisk_greater.liga;
 sub asterisk slash by asterisk_slash.liga;
 sub at underscore by at_underscore.liga;
 sub bar bar by bar_bar.liga;
-sub bar bracketright by bar_bracketright.liga;
 sub bar equal by bar_equal.liga;
 sub bar greater by bar_greater.liga;
 sub bar hyphen by bar_hyphen.liga;
-sub bracketleft bar by bracketleft_bar.liga;
-sub bracketleft less by bracketleft_less.liga;
-sub bracketright numbersign by bracketright_numbersign.liga;
 sub colon colon by colon_colon.liga;
 sub colon equal by colon_equal.liga;
 sub colon greater by colon_greater.liga;
@@ -1652,7 +1590,6 @@ sub equal equal by equal_equal.liga;
 sub equal greater by equal_greater.liga;
 sub exclam equal by exclam_equal.liga;
 sub exclam exclam by exclam_exclam.liga;
-sub greater bracketright by greater_bracketright.liga;
 sub greater colon by greater_colon.liga;
 sub greater equal by greater_equal.liga;
 sub greater greater by greater_greater.liga;
@@ -1673,7 +1610,6 @@ sub less hyphen by less_hyphen.liga;
 sub less less by less_less.liga;
 sub less plus by less_plus.liga;
 sub less slash by less_slash.liga;
-sub numbersign bracketleft by numbersign_bracketleft.liga;
 sub numbersign colon by numbersign_colon.liga;
 sub numbersign equal by numbersign_equal.liga;
 sub numbersign exclam by numbersign_exclam.liga;
